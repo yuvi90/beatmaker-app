@@ -129,10 +129,11 @@ class DrumKit {
 
 }
 
+//---------------------------------------------------------------------------------
 
 const drums = new DrumKit();
 
-// Event Listeners
+//-------------------------------------Event Listeners
 
 drums.pads.forEach((pad) => {
     pad.addEventListener('click', drums.activePad);
