@@ -14,10 +14,6 @@ class DrumKit {
         this.tempoSlider = document.querySelector('.tempo-slider');
     }
 
-    activePad() {
-        this.classList.toggle('active');
-    }
-
     repeat() {
         let step = this.index % 8;
         const activeBars = document.querySelectorAll(`.b${step}`);
@@ -133,7 +129,9 @@ const drums = new DrumKit();
 //-------------------------------------Event Listeners
 
 drums.pads.forEach((pad) => {
-    pad.addEventListener('click', drums.activePad);
+    pad.addEventListener('click', function (){
+        this.classList.toggle('active');
+    });
     pad.addEventListener('animationend', function () {
         this.style.animation = '';
     })
