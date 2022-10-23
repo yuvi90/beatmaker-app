@@ -9,9 +9,6 @@ class DrumKit {
         this.kickAudio = document.querySelector('.kick-sound');
         this.snareAudio = document.querySelector('.snare-sound');
         this.hihatAudio = document.querySelector('.hihat-sound');
-        this.currentKick = './sounds/kick-classic.wav';
-        this.currentSnare = './sounds/snare-acoustic01.wav';
-        this.currentHihat = './sounds/hithat-acoustic01.wav';
         this.selects = document.querySelectorAll('select');
         this.muteBtn = document.querySelectorAll('.mute');
         this.tempoSlider = document.querySelector('.tempo-slider');
