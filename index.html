@@ -16,7 +16,7 @@
           <button data-track="0" class="mute kick-volume">
             <i class="fa-solid fa-volume-xmark"></i>
           </button>
-          <select name="kick-selet" id="kick-selet">
+          <select name="kick-select" id="kick-select">
             <option value="./sounds/kick-classic.wav">Classic Kick</option>
             <option value="./sounds/kick-808.wav">808 Kick</option>
             <option value="./sounds/kick-heavy.wav">Heavy Kick</option>
@@ -40,7 +40,7 @@
           <button data-track="1" class="mute snare-volume">
             <i class="fa-solid fa-volume-xmark"></i>
           </button>
-          <select name="snare-selet" id="snare-selet">
+          <select name="snare-select" id="snare-select">
             <option value="./sounds/snare-acoustic01.wav">Acoustic Snare</option>
             <option value="./sounds/snare-808.wav">808 Snare</option>
             <option value="./sounds/snare-vinyl02.wav">Vinyl Snare</option>
@@ -64,7 +64,7 @@
           <button data-track="2" class="mute hihat-volume">
             <i class="fa-solid fa-volume-xmark"></i>
           </button>
-          <select name="hihat-selet" id="hihat-selet">
+          <select name="hihat-select" id="hihat-select">
             <option value="./sounds/hihat-acoustic01.wav">Acoustic Hihat</option>
             <option value="./sounds/hihat-808.wav">808 Hihat</option>
           </select>
@@ -82,6 +82,10 @@
       </div>
 
       <button class="play">Play</button>
+      <div class="tempo">
+        <input type="range" name="" id="" class="tempo-slider" max="300" min="20" value="150">
+        <p>Tempo: <span class="tempo-nr">160</span></p>
+      </div>
       
     </div>
 

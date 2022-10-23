@@ -105,3 +105,38 @@ select {
     font-size: 1rem;
     cursor: pointer;
 }
+
+.mute.active {
+    background: rgb(172, 171, 171);
+}
+
+@keyframes playTrack {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.tempo {
+    margin: 3rem;
+    width: 20%;
+}
+
+.tempo-slider {
+    -webkit-appearance: none;
+    padding: 0.1rem;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background: rgb(88,88,88);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.tempo p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
